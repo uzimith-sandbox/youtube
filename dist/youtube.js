@@ -32,7 +32,8 @@ function onPlayerReady(event) {
 }
 
 function onPlayerStateChange(event) {
-  if (event.data = YT.PlayerState.ENDED) {
-    window.location.href = '/2';
+  console.log(event.data);
+  if (event.data === YT.PlayerState.ENDED) {
+    window.location.href = '2';
   }
 }
