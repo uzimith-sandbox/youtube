@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Youtube Player</title>
+
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="theme.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">うじみー</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container theme-showcase" role="main">
+      <div class="jumbotron">
+        <p><a href="https://developers.google.com/youtube/iframe_api_reference?hl=ja">YouTube  IFrame API</a>を使ったサンプルだよ！</p>
+      </div>
+
+      <div class="page-header">
+        <h1>Youtube Player</h1>
+      </div>
+
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div id="player"></div>
+        </div>
+        <div class="col-md-2">
+          <div class="page-header">
+            <h3>再生</h3>
+          </div>
+          <ul>
+            <li><a class="youtube_play" data-id="F59CzviF8_0" href="#">動画1</a></li>
+            <li><a class="youtube_play" data-id="RrrtnTfMwLA" href="#">動画2</a></li>
+            <li><a class="youtube_play" data-id="VhzVI3W1tBM" href="#">動画3</a></li>
+          </ul>
+        </div>
+      </div>
+
+
+    </div>
+
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="./dist/youtube.js"></script>
+  </body>
+</html>
